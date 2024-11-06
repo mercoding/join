@@ -1,0 +1,72 @@
+[
+    {
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "email": "max.mustermann@example.com",
+      "password": "pass1234",
+      "initials": "MM"
+    },
+    {
+      "firstName": "Anna",
+      "lastName": "Müller",
+      "email": "anna.mueller@example.com",
+      "password": "password1",
+      "initials": "AM"
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Schmidt",
+      "email": "peter.schmidt@example.com",
+      "password": "peter2023",
+      "initials": "PS"
+    },
+    {
+      "firstName": "Julia",
+      "lastName": "Klein",
+      "email": "julia.klein@example.com",
+      "password": "juliaklein123",
+      "initials": "JK"
+    },
+    {
+      "firstName": "Sophie",
+      "lastName": "Lehmann",
+      "email": "sophie.lehmann@test.de",
+      "password": "lehmannpass",
+      "initials": "SL"
+    },
+    {
+      "firstName": "Thomas",
+      "lastName": "Schneider",
+      "email": "thomas.schneider@stadt.de",
+      "password": "schneider321",
+      "initials": "TS"
+    },
+    {
+      "firstName": "Laura",
+      "lastName": "Weber",
+      "email": "laura.weber@land.gov",
+      "password": "lauraweber999",
+      "initials": "LW"
+    },
+    {
+      "firstName": "Felix",
+      "lastName": "Fischer",
+      "email": "felix.fischer@test.de",
+      "password": "fischer555",
+      "initials": "FF"
+    },
+    {
+      "firstName": "Lisa",
+      "lastName": "Wagner",
+      "email": "lisa.wagner@stadt.de",
+      "password": "lisa2024",
+      "initials": "LW"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Krüger",
+      "email": "david.krueger@land.gov",
+      "password": "davidk123",
+      "initials": "DK"
+    }
+]

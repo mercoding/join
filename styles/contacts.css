@@ -1,0 +1,384 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+  border-radius: 10px;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  height: calc(100vh - 96px);
+}
+
+.content {
+  max-height: 100%;
+  height: 100%;
+}
+
+.contacts-container {
+  background-color: #fff;
+  box-shadow: 4px 0 6px 0 rgb(0 0 0 / 0.08);
+  width: 456px;
+  position: relative;
+}
+
+.contacts {
+  padding: 90px 24px 32px 24px;
+  width: 440px;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.add-contact-container {
+  width: calc(100% - 32px);
+  height: 101px;
+  position: absolute;
+  z-index: 500;
+  background-color: #fff;
+}
+
+.add-contact-btn {
+  border-radius: 10px;
+  background-color: #2a3647;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  padding: 12px 16px;
+  gap: 16px;
+  width: 352px;
+}
+
+.add-contact-btn:hover {
+  background-color: #29abe2;
+}
+
+.edit-btn-mobile {
+  display: flex;
+}
+
+.letter {
+  width: 352px;
+  padding: 25px 36px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.single-contact-btn {
+  width: 352px;
+  padding: 15px 24px;
+  gap: 35px;
+  color: #000;
+}
+
+.single-contact-btn:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(240, 240, 240, 1) 100%
+  );
+}
+
+.single-contact-btn-active {
+  width: 352px;
+  padding: 15px 24px;
+  gap: 35px;
+  background-color: #2a3647;
+  color: #fff;
+}
+
+.single-contact-btn-active:hover {
+  background: rgb(42, 54, 71);
+}
+
+.name-email {
+  gap: 5px;
+  text-align: left;
+}
+
+.contact-name {
+  font-size: 20px;
+  text-align: left;
+}
+
+.contact-email {
+  color: #007cee;
+}
+
+.circle {
+  color: #fff;
+  font-size: 12px;
+  min-width: 42px;
+  height: 42px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+}
+
+.neutralColor {
+  background-color: #d9d9d9;
+}
+
+.contact-info-container {
+  display: flex;
+  padding-left: 45px;
+  padding-top: 80px;
+  gap: 21px;
+}
+
+.info-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.contact-title {
+  gap: 30px;
+}
+
+.vertical-line {
+  width: 0px;
+  border-left: 3px solid #29abe2;
+  height: 59px;
+}
+
+.single-contact {
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+}
+
+.single-contact-closed {
+  transform: translateX(1200px);
+}
+
+.single-contact-large {
+  gap: 54px;
+  color: #000;
+}
+
+.circle-large {
+  min-width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  font-size: 47px;
+  font-weight: 500;
+}
+
+.contact-name-large {
+  font-size: 47px;
+}
+
+.icon-container {
+  gap: 13px;
+}
+
+.contact-icon-btn {
+  gap: 8px;
+  color: #000;
+}
+
+.contact-icon-btn:hover {
+  color: #007cee;
+  filter: invert(65%) sepia(100%) saturate(7155%) hue-rotate(196deg)
+    brightness(103%) contrast(102%);
+}
+
+.contact-info-text {
+  font-size: 22px;
+  padding: 20px 0;
+}
+
+/*------------- Dialog ----------------------------------------------*/
+dialog::backdrop {
+  background-color: #191b1d00;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#contact-dialog {
+  /*   z-index: 5000; */
+  width: 100%;
+  max-width: 1212px;
+  margin:auto;
+  height: 592px;
+  border: none;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  position: fixed; /* Fixes dialog to viewport */
+  background-color: transparent;
+  /* right: 0;
+  top: 50%; */
+  overflow: hidden;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  /* animation: slideIn 0.5s ease-in-out forwards; */
+}
+
+.dialog-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-dialog.show{
+  transform: translateX(100vw);
+}
+ 
+#contact-dialog.bg::backdrop {
+  background-color: #191b1d4a; /* Final background color with transparency */
+}
+
+.join-logo {
+  position: absolute;
+  top: 120px;
+  left: 48px;
+  width: 56px;
+  height: auto;
+}
+.dialog-title {
+  background: #2a3647;
+  height: 100%;
+  padding: 66px 48px;
+  color: #fff;
+  gap: 16px;
+  width: inherit;
+}
+.horizontal-line {
+  width: 90px;
+  background-color: #29abe2;
+  height: 3px;
+}
+.form-container {
+  background-color: #fff;
+  width: 80%;
+  height: 100%;
+  padding: 60px;
+  gap: 40px;
+}
+.circle-icon {
+  font-size: 64px;
+}
+form {
+  gap: 32px;
+  width: 422px;
+}
+input::placeholder {
+  color: #d1d1d1;
+}
+label {
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 13px 21px;
+  color: #d1d1d1;
+  cursor: text;
+}
+label:focus-within {
+  outline: 3px solid #29abe2;
+    border-color: #fff;
+  }
+  
+label > input {
+  outline: none ;
+  border: none ;
+  background: transparent;
+  width: 100%;
+  font-size: 20px;
+  align-self: center;
+}
+
+.input-icon {
+  height: 16px;
+  width: 16px;
+  align-self: center;
+  -webkit-user-drag: none;
+}
+.close-btn {
+  top: 60px;
+  right: 60px;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  z-index: 6000;
+}
+.close-btn:hover {
+  background-color: #d1d1d1;
+}
+.btn-container {
+  gap: 24px;
+}
+.create-conatct-btn {
+  background-color: #2a3647;
+}
+.create-conatct-btn:hover {
+  background-color: #29abe2;
+}
+.cancel-btn {
+  font-size: 20px;
+  gap: 10px;
+  border: 1px solid #2a3647;
+  border-radius: 10px;
+  padding: 13px 21px;
+  color: #2a3647;
+}
+.cancel-btn:hover {
+  color: #29abe2;
+  filter: invert(65%) sepia(100%) saturate(7155%) hue-rotate(196deg)
+    brightness(103%) contrast(102%);
+}
+.cancel-icon,
+.check-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.submit-btn {
+  border-radius: 10px;
+  padding: 13px 21px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.inactiv-btn {
+  background-color: #2a3647;
+  color: #a8a8a8;
+}
+
+.inactiv-btn:hover {
+  cursor: default;
+  background-color: #2a3647;
+  color: #a8a8a8;
+}
+
+.inactive-color {
+  filter: invert(51%) sepia(0%) saturate(2329%) hue-rotate(52deg)
+    brightness(129%) contrast(102%);
+}
+
+.success-note {
+  height: 74px;
+  width: 326px;
+  background-color: #2a3647;
+  margin: auto;
+  bottom: 100px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  left: 50%;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+}
+
+.success-note-closed {
+  transform: translateY(400px);
+}

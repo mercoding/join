@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+  
+  <title>Join-378 Signup Page</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles/signup.css">
+  <link rel="stylesheet" href="../styles/signup-mq.css">
+
+  <script src="../script.js" defer></script>
+  <script src="../scripts/signup.js" defer></script>
+</head>
+<body onload="initSignup()">
+
+  <div class="lock-landscape">
+    <h1>Please Rotate Your Device!</h1>
+    <h1>Landscape Mode is not supported yet!</h1>
+  </div>
+
+  <div class="content-ctn">
+
+    <div class="logo">
+      <img src="../assets/img/logo.png" alt="Join-Logo">
+    </div>
+
+     
+    <div class="login-ctn">
+      <a href="./login.html">
+      <img class="leftarrow" src="../assets/img/bluearrowleft.png" alt="Arrow Left"/></a>
+      <p class="signup-ctn">Sign Up</p>
+
+      <form name="signupform" onsubmit="signUpUser();return false;">
+        <div class="input-ctn">
+          <div class="name-input">
+            <input id="nameInput" class="" type="text" placeholder="FirstName LastName" pattern="^[A-Za-zÄäÖöÜüß\s]+$" onkeyup="checkForm()" required>
+            <img src="../assets/img/person.png" alt="Person-Icon">
+          </div>
+          <div class="email-input">
+            <input autocomplete="username" id="emailInput" class="" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Email" onkeyup="checkForm()" required>
+            <img src="../assets/img/mail.png" alt="E-Mail-Icon">
+          </div>
+          
+          <div class="password-input-1">
+            <input autocomplete="new-password" id="passwordInput" class="password-input" type="password" minlength="3" placeholder="Password" onkeyup="checkForm()" required>
+            <img id="hidepwd1" onclick="togglePasswordIcon(1)" src="../assets/img/lock.png" alt="Lock-Icon">
+            <img id="showpwd1" onclick="togglePasswordIcon(1)" src="../assets/img/visibility_off.png" alt="Eyes-Icon" class="dnone">
+          </div>
+          
+          <div class="password-input-2">
+            <input autocomplete="new-password" id="passwordInputConfirm" class="password-input" type="password" minlength="3" placeholder="Confirm Password" onkeyup="checkForm()" required>
+            <img id="hidepwd2" onclick="togglePasswordIcon(2)" src="../assets/img/lock.png" alt="Lock-Icon">
+            <img id="showpwd2" onclick="togglePasswordIcon(2)" src="../assets/img/visibility_off.png" alt="Eyes-Icon" class="dnone">
+          </div>
+
+          <div id="error_message"></div>
+          
+        </div>
+        
+        <div class="checkbox-ctn">
+          <input type="checkbox" id="checkbox" onclick="checkForm()">
+          <label for="checkbox">I accept the <a href="./policy.html" target="_blank">Privacy policy</a></label>
+        </div>
+
+        <div class="login-ctn-btn">
+          <button id="btn" class="login-btn" disabled="true">Sign up</button>
+        </div>
+      </form>
+
+      <div class="signup-popup" id="popupsuccess">You Signed Up Successfully!</div>
+
+      <div class="legal-ctn">
+        <a href="./policy.html" target="_blank">Privacy Policy</a>
+        <a href="./impressum.html" target="_blank">Legal Notice</a>
+      </div>
+
+    </div>
+    
+    
+
+  </div>
+
+</body>
+</html>

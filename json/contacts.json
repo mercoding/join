@@ -1,0 +1,250 @@
+[
+  {
+    "color": "orange",
+    "email": "andre@gmbh.de",
+    "firstName": "Andre",
+    "initials": "AS",
+    "lastName": "Schulze",
+    "phone": "+34123456"
+  },
+  {
+    "color": "violet",
+    "email": "anna.mueller@gmail.com",
+    "firstName": "Anna",
+    "initials": "AM",
+    "lastName": "Müller",
+    "phone": "+49 151 23456789"
+  },
+  {
+    "color": "purple",
+    "email": "clara.peters@web.de",
+    "firstName": "Clara",
+    "initials": "CP",
+    "lastName": "Peters",
+    "phone": "+49 151 12457896"
+  },
+  {
+    "color": "pink",
+    "email": "david.krause@gmail.com",
+    "firstName": "David",
+    "initials": "DK",
+    "lastName": "Krause",
+    "phone": "+49 151 95847631"
+  },
+  {
+    "color": "yellow",
+    "email": "elena.schulz@gmx.de",
+    "firstName": "Elena",
+    "initials": "ES",
+    "lastName": "Schulz",
+    "phone": "+49 152 64798235"
+  },
+  {
+    "color": "green",
+    "email": "emma.hofmann@outlook.de",
+    "firstName": "Emma",
+    "initials": "EH",
+    "lastName": "Hofmann",
+    "phone": "+49 172 46802468"
+  },
+  {
+    "color": "dark_purple",
+    "email": "felix.mayer@gmail.com",
+    "firstName": "Felix",
+    "initials": "FM",
+    "lastName": "Mayer",
+    "phone": "+49 152 85792468"
+  },
+  {
+    "color": "red",
+    "email": "hannah.zimmer@web.de",
+    "firstName": "Hannah",
+    "initials": "HZ",
+    "lastName": "Zimmer",
+    "phone": "+49 172 12345678"
+  },
+  {
+    "color": "orange",
+    "email": "jan.neumann@gmail.com",
+    "firstName": "Jan",
+    "initials": "JN",
+    "lastName": "Neumann",
+    "phone": "+49 160 12345678"
+  },
+  {
+    "color": "violet",
+    "email": "jonas.wolf@yahoo.com",
+    "firstName": "Jonas",
+    "initials": "JW",
+    "lastName": "Wolf",
+    "phone": "+49 171 35724680"
+  },
+  {
+    "color": "purple",
+    "email": "julia.weber@yahoo.de",
+    "firstName": "Julia",
+    "initials": "JW",
+    "lastName": "Weber",
+    "phone": "+49 171 54321678"
+  },
+  {
+    "color": "pink",
+    "email": "laura.lange@outlook.com",
+    "firstName": "Laura",
+    "initials": "LL",
+    "lastName": "Lange",
+    "phone": "+49 160 34680257"
+  },
+  {
+    "color": "yellow",
+    "email": "lea.becker@gmx.de",
+    "firstName": "Lea",
+    "initials": "LB",
+    "lastName": "Becker",
+    "phone": "+49 171 47925813"
+  },
+  {
+    "color": "green",
+    "email": "lukas.fischer@outlook.com",
+    "firstName": "Lukas",
+    "initials": "LF",
+    "lastName": "Fischer",
+    "phone": "+49 172 87654321"
+  },
+  {
+    "color": "dark_purple",
+    "email": "max.schneider@gmx.de",
+    "firstName": "Max",
+    "initials": "MS",
+    "lastName": "Schneider",
+    "phone": "+49 152 98765432"
+  },
+  {
+    "color": "red",
+    "email": "mia.koch@gmx.de",
+    "firstName": "Mia",
+    "initials": "MK",
+    "lastName": "Koch",
+    "phone": "+49 152 24681357"
+  },
+  {
+    "color": "orange",
+    "email": "nico.frank@yahoo.com",
+    "firstName": "Nico",
+    "initials": "NF",
+    "lastName": "Frank",
+    "phone": "+49 172 56802468"
+  },
+  {
+    "color": "violet",
+    "email": "paul.kaiser@icloud.com",
+    "firstName": "Paul",
+    "initials": "PK",
+    "lastName": "Kaiser",
+    "phone": "+49 160 23458697"
+  },
+  {
+    "color": "purple",
+    "email": "simon.wagner@yahoo.de",
+    "firstName": "Simon",
+    "initials": "SW",
+    "lastName": "Wagner",
+    "phone": "+49 171 35690248"
+  },
+  {
+    "color": "pink",
+    "email": "sophia.schmidt@hotmail.com",
+    "firstName": "Sophia",
+    "initials": "SS",
+    "lastName": "Schmidt",
+    "phone": "+49 160 13579246"
+  },
+  {
+    "color": "yellow",
+    "email": "tim.bauer@gmail.com",
+    "firstName": "Tim",
+    "initials": "TB",
+    "lastName": "Bauer",
+    "phone": "+49 151 98712345"
+  },
+  {
+    "color": "orange",
+    "email": "max.mustermann@example.com",
+    "firstName": "Max",
+    "initials": "MM",
+    "lastName": "Mustermann",
+    "phone": ""
+  },
+  {
+    "color": "green",
+    "email": "anna.mueller@example.com",
+    "firstName": "Anna",
+    "initials": "AM",
+    "lastName": "Müller",
+    "phone": ""
+  },
+  {
+    "color": "pink",
+    "email": "peter.schmidt@example.com",
+    "firstName": "Peter",
+    "initials": "PS",
+    "lastName": "Schmidt",
+    "phone": ""
+  },
+  {
+    "color": "violet",
+    "email": "julia.klein@example.com",
+    "firstName": "Julia",
+    "initials": "JK",
+    "lastName": "Klein",
+    "phone": ""
+  },
+  {
+    "color": "purple",
+    "email": "sophie.lehmann@test.de",
+    "firstName": "Sophie",
+    "initials": "SL",
+    "lastName": "Lehmann",
+    "phone": ""
+  },
+  {
+    "color": "red",
+    "email": "thomas.schneider@stadt.de",
+    "firstName": "Thomas",
+    "initials": "TS",
+    "lastName": "Schneider",
+    "phone": ""
+  },
+  {
+    "color": "yellow",
+    "email": "laura.weber@land.gov",
+    "firstName": "Laura",
+    "initials": "LW",
+    "lastName": "Weber",
+    "phone": ""
+  },
+  {
+    "color": "green",
+    "email": "felix.fischer@test.de",
+    "firstName": "Felix",
+    "initials": "FF",
+    "lastName": "Fischer",
+    "phone": ""
+  },
+  {
+    "color": "violet",
+    "email": "lisa.wagner@stadt.de",
+    "firstName": "Lisa",
+    "initials": "LW",
+    "lastName": "Wagner",
+    "phone": ""
+  },
+  {
+    "color": "orange",
+    "email": "david.krueger@land.gov",
+    "firstName": "David",
+    "initials": "DK",
+    "lastName": "Krüger",
+    "phone": ""
+  }
+]

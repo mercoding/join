@@ -1,0 +1,413 @@
+/*@import url('./styles/board.css');*/
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: "Inter";
+}
+
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter";
+  display: grid;
+  grid-template:  "nav head"
+                  "nav main";
+
+    height: 100vh;
+    grid-template-columns: 232px 1fr;
+    /*padding: 0 256px 0 264px;*/
+  position: relative;
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: #f6f7f8;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: "Inter";
+  font-weight: normal;
+  color: #cdcdcd;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-size: 61px;
+}
+
+
+.orange {
+  background-color:#FF7A00;
+}
+
+.pink{
+  background-color:#FF5EB3;
+}
+
+.dark_purple {
+  background-color:#462F8A;
+}
+
+.purple {
+  background-color:#6E52FF;
+}
+
+.violet {
+  background-color:#9327FF;
+}
+.turquoise {
+  background-color:#00BEE8;
+}
+.green {
+  background-color:#1FD7C1;
+}
+
+.bright-red {
+  background-color: #FF745E;
+}
+
+.bright-orange {
+  background-color: #FFA35E;
+}
+
+.pink-2{
+  background-color:#FC71FF;
+}
+
+.yellow {
+  background-color:#FFC701;
+}
+
+.blue {
+  background-color:#0038FF;
+}
+
+.bright-green{
+  background-color: #C3FF2B;
+}
+
+.yellow-2 {
+  background-color:#FFE62B;
+}
+
+.red {
+  background-color:#FF4646;
+} 
+
+.orange-yellow {
+  background-color:#FFBB2B;
+}
+
+
+
+/* ------------------------------------Header-------------------------------------------- */
+
+header {
+  grid-area: head;
+  background-color: #fff;
+  width: 100%;
+  height: 96px;
+  display: flex;
+  padding: 20px 40px 20px 128px;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.profil-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #2a3647;
+  border-radius: 30px;
+  width: 56px;
+  height: 56px;
+}
+
+.profil-img:hover {
+  background-color: #0c2e621f;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.help img:hover {
+  width: 24px;
+  height: 24px;
+}
+
+.dropdown-menu{
+    position:relative;
+}
+
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #2A3647;
+    border-radius: 20px 0px 20px 20px;
+    padding: 10px;
+    top:76px;
+    right:-20px;
+    gap:8px;
+ 
+}
+
+.dropdown-btn{
+    padding: 8px 16px;
+    text-align: left;
+    width:140px;
+}
+
+.dropdown-btn:hover{
+    background-color: #2a3d59;
+}
+
+/* ------------------------------------nav-------------------------------------------- */
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a3647;
+  padding-top: 64px;
+  padding-bottom: 64px;
+ /*  width: 232px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;*/
+  height: 100vh;  
+  z-index: 2000;
+  color: #cdcdcd;
+}
+
+main {
+  grid-area: main;
+  /*height: 100vh;*/
+  overflow-y: auto;
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 46px;
+  width: 100%;
+  padding: 8px 56px;
+}
+
+.nav-btn:hover {
+  background-color: #2a3d59;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.data-protection {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  /* padding-left: 52px; */
+  /*padding-top: 243px;*/
+  width: 100%;
+}
+
+.data-policy {
+  display: flex;
+  align-items: center;
+  /* padding: 8px; */
+  width: 100%;
+  height: 46px;
+  /* padding: 8px 8px; */
+  padding-left: 52px;
+}
+
+/* .data-protection span:hover {
+  color: #29abe2;
+  font-weight: 700;
+} */
+
+.data-policy:hover {
+  background-color: #2a3d59;
+}
+
+/* -------------------------- responsive ----------------------------*/
+@media only screen and (max-width: 1200px) {
+  h1{
+    font-size: 47px;
+  }
+
+  body {
+    grid-template:  " head"
+                    "main"
+                    "nav ";
+  
+      grid-template-columns: 1fr;
+      grid-template-rows: 80px 1fr 80px;
+
+  }
+
+  header{
+    padding: 20px 16px;
+    height:auto;
+  }
+
+  .dropdown{
+    top:68px;
+  }
+
+ main {
+  height:auto;
+ } 
+
+ nav{
+  flex-direction: row;
+  height:auto;
+  padding: 0;
+  gap:15px;
+ }
+
+ .menu-bar{
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap:4px;
+ }
+
+ .nav-btn{
+  justify-content: center;
+  flex-direction: column;
+  height:76px;
+  width: 76px;
+  gap:4px;
+  padding:0;
+  border-radius:8px;
+ }
+
+ .nav-text{
+  font-size: 14px;
+ }
+
+ .nav-icon{
+  height: 24px;
+  width:24px;
+ }
+
+ .main-logo, .title, .data-protection{
+  display:none;
+ }
+
+
+ .main-logo-header{
+  display: block !important;
+ }
+}
+
+
+
+
+.lock-landscape {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape)
+{
+  .lock-landscape {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .content-ctn {
+    display: none !important;
+  }
+  header, nav, main {
+    display: none !important;
+  }
+}

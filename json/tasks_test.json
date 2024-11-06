@@ -1,0 +1,13 @@
+[
+  {
+    "id": 0,
+    "Column": "To Do",
+    "Title": "Projektinitialisierung",
+    "Description": "Initialisierung des JavaScript-Projekts mit npm und Git-Repository.",
+    "Date": "2024-10-10",
+    "Priority": "Medium",
+    "Category": "Technical Task",
+    "Subtasks": [],
+    "Persons": ["Julia Weber"]
+  }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+
+    <script src="./scripts/assets.js" defer></script>
+    <script src="./scripts/template.js" defer></script>
+    <script src="./scripts/add-task.js" defer></script>
+    <script src="./scripts/summary.js" defer></script>
+    <script type="module" src="./scripts/boards.js"></script>
+    <script src="./scripts/contacts.js" defer></script>
+    <script src="./scripts/login.js" defer></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/assets.css" />
+
+    <link rel="icon" type="image/png" href=".\assets\img\logo.png" />
+
+    <title>Join</title>
+
+  </head>
+  <body onload="init()">
+    <header>
+      <div class="header-wrapper">
+        <div class="title">Kanban Project Management Tool</div>
+        <img src="./assets/icons/logo-dark.svg" alt="join-logo" class="main-logo-header d_none">
+        <div class="header-right">
+          <button class="help">
+            <img src="./assets/img/help.png" alt="help-icon">
+          </button>
+          <div class="user-profil">
+            <div class="dropdown-menu">
+              <button class="profil-img" onclick="openCloseDropdownMenu()">
+                <img src="./assets/img/user-profil.png" alt="" />
+              </button>
+              <div class="dropdown d_none" id="dropdown-menu">
+                <button class="dropdown-btn"><span>Legal Notice</span></button>
+                <button class="dropdown-btn"><span>Privacy Policy</span></button>
+                <button class="dropdown-btn"><span>Log out</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <img src="./assets/img/logo-weiss.png" alt="join-logo" class="main-logo">
+      <div class="menu-bar">
+        <button class="nav-btn">
+          <span class="nav-icon"><img src="./assets/icons/summary.png" alt=""></span>
+          <span class="nav-text clickable" onclick="openSummary()">Summary</span>
+        </button>
+        <button class="nav-btn">
+          <span class="nav-icon"><img src="./assets/icons/add-task.png" alt=""></span>
+          <span class="nav-text clickable" onclick="openAddTask()">Add Task</span>
+        </button>
+        <button class="nav-btn">
+          <span class="nav-icon"><img src="./assets/icons/board.png" alt=""></span>
+          <span class="nav-text clickable" onclick="openBoards()">Board</span>
+        </button>
+        <button class="nav-btn">
+          <span class="nav-icon"><img src="./assets/icons/contact.png" alt=""></span>
+          <span class="nav-text clickable" onclick="openContacts()">Contacts</span>
+        </button>
+      </div>
+      <div class="data-protection">
+        <button class="data-policy"><span>Privacy Policy</span></button>
+        <button class="data-policy"><span>Legal notice</span></button>
+      </div>
+    </nav>
+    <main></main>
+  </body>
+</html>

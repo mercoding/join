@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+  <script src="../scripts/assets.js" defer></script>
+  <link rel="stylesheet" href="../styles/board.css">
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js" defer></script>
+  <script type="module" src="../scripts/module.js"></script>
+  <link rel="stylesheet" href="../styles/assets.css" />
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+  <title>Join</title>
+</head>
+
+<body onload="loadBoards()">
+  <header>
+    <div class="header-wrapper">
+      <div class="title">Kanban Project Management Tool</div>
+      <img src="../assets/icons/logo-dark.svg" alt="join-logo" class="main-logo-header d_none">
+      <div class="header-right">
+        <button class="help" onclick="openHelp()">
+          <img src="../assets/img/help.png" alt="help-icon">
+        </button>
+        <div class="user-profil">
+          <div class="dropdown-menu">
+            <button id="userlogo" class="profil-img" style="color: blue;"></button>
+            <div class="dropdown d_none" id="dropdown-menu">
+              <button class="dropdown-btn" onclick="openImprint()"><span>Legal Notice</span></button>
+              <button class="dropdown-btn" onclick="openPolicy()"><span>Privacy Policy</span></button>
+              <button class="dropdown-btn" onclick="openLogin()"><span>Log out</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <img src="../assets/img/logo-weiss.png" alt="join-logo" class="main-logo">
+    <div class="menu-bar">
+      <button class="nav-btn" onclick="openSummary()">
+        <span class="nav-icon"
+          ><img src="../assets/icons/summary.png" alt=""
+        /></span>
+        <span class="nav-text clickable">Summary</span>
+      </button>
+      <button class="nav-btn" onclick="openAddTask()">
+        <span class="nav-icon">
+          <img src="../assets/icons/add-task.png" alt=""/>
+        </span>
+        <span class="nav-text clickable">Add Task</span>
+      </button>
+      <button class="nav-btn active" onclick="openBoards()">
+        <span class="nav-icon"
+          ><img src="../assets/icons/board.png" alt=""
+        /></span>
+        <span class="nav-text clickable">Board</span>
+      </button>
+      <button class="nav-btn" onclick="openContacts()">
+        <span class="nav-icon"
+          ><img src="../assets/icons/contact.png" alt=""
+        /></span>
+        <span class="nav-text clickable">Contacts</span>
+      </button>
+    </div>
+    <div class="data-protection">
+      <button class="data-policy clickable" onclick="openPolicy()"><span>Privacy Policy</span></button>
+      <button class="data-policy clickable" onclick="openImprint()"><span>Legal notice</span></button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="boards" class="boards">
+      <div class="board-head">
+        <div class="board-headline">
+          <h1>Board</h1>
+        </div>
+        <div class="search-task">
+            <div class="search-box clickable">
+              <div class="input-innerfield clickable"><input id="boards-search" onkeyup="searchEntry()" class="board-search-input clickable" placeholder="Find task..."></div>
+              <div class="divider"></div>
+              <button class="btn-task" type="submit" disabled>Search</button>
+            </div>
+        </div>
+        <div class="btn-task-container">
+            <button class="btn-add-task clickable" onclick=" openAddTaskOverlay('To Do')">
+              <span class="btn-add-task-description">Add Task</span>
+              <span class="btn-add-task-plus">+</span>
+            </button>
+        </div>
+      </div>
+      <div class="board-bar">
+        <div class="board-to-do">
+          <div>To Do</div>
+          <div class="add-btn clickable" onclick="openAddTaskOverlay('to-do')"><img src="..\assets\icons\plus.svg" alt=""></div>
+        </div>
+        <div class="board-In-progress">
+          <div>In Progress</div>
+          <div class="add-btn clickable" onclick="openAddTaskOverlay('in-progress')"><img src="..\assets\icons\plus.svg" alt=""></div>
+        </div>
+        <div class="board-feedback">
+          <div>Await feedback</div>
+          <div class="add-btn clickable" onclick="openAddTaskOverlay('await-feedback')"><img src="..\assets\icons\plus.svg" alt=""></div>
+        </div>
+        <div class="board-done">
+          <div>Done</div>
+          <div class="add-btn clickable" onclick="openAddTaskOverlay('done')"><img src="..\assets\icons\plus.svg" alt=""></div>
+        </div>
+      </div>
+      <div id="board-main" class="board-main">
+        <div class="to-do-title d_none">
+          <div class="board-to-do">
+            <div>To Do</div>
+            <div class="add-btn clickable" onclick="openAddTaskOverlay('to-do')"><img src="..\assets\icons\plus.svg" alt=""></div>
+          </div>
+        </div>
+        <div id="to-do" class="board-main-to-do column"></div>
+        <div class="in-progress-title d_none">
+          <div class="board-In-progress">
+            <div>In Progress</div>
+            <div class="add-btn clickable" onclick="openAddTaskOverlay('in-progress')"><img src="..\assets\icons\plus.svg" alt=""></div>
+          </div>
+        </div>
+        <div id="in-progress" class="board-main-in-progress column"></div>
+        <div class="await-feedback d_none">
+          <div class="board-feedback">
+            <div>Await feedback</div>
+            <div class="add-btn clickable" onclick="openAddTaskOverlay('await-feedback')"><img src="..\assets\icons\plus.svg" alt=""></div>
+          </div>
+        </div>
+        <div id="await-feedback" class="board-main-await-feedback column"></div>
+        <div class="done-title d_none">
+          <div class="board-done">
+            <div>Done</div>
+            <div class="add-btn clickable" onclick="openAddTaskOverlay('done')"><img src="..\assets\icons\plus.svg" alt=""></div>
+          </div>
+        </div>
+        <div id="done" class="board-main-done column"></div>
+      </div>
+    </section>
+  </main>
+  <div id="dragelement" class="dragelement d_none"></div>
+  <div class="overlay d_none"></div>
+
+  <div class="lock-landscape">
+    <h1>Please Rotate Your Device!</h1>
+    <h1>Landscape Mode is not supported yet!</h1>
+  </div>
+
+</body>
+
+</html>

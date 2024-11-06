@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+
+  <title>Join-378 Login Page</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/login-mq.css">
+
+  <script src="../script.js" defer></script>
+  <script type="module" src="../scripts/login.js" defer></script>
+</head>
+<body onload="initLogin()">
+
+  <div class="lock-landscape">
+    <h1>Please Rotate Your Device!</h1>
+    <h1>Landscape Mode is not supported yet!</h1>
+  </div>
+
+  <div class="content-ctn">
+
+    <div class="logo">
+      <img class="img-logo" src="../assets/img/logo.png" alt="Join-Logo">
+    </div>
+
+    <div class="login-ctn">
+      <p class="login-text">Log in</p>
+      <form onsubmit="checkUserPassword();return false;" class="position-relative">
+        <div class="input-ctn">
+          <div class="email-input-ctn">
+            <input autocomplete="username" id="emailInput" class="email-input" type="email" placeholder="Email" required>
+            <img src="../assets/img/mail.png" alt="Mail-Icon">
+          </div>
+          <div class="password-input-ctn">
+            <input autocomplete="current-password" id="passwordInput" class="password-input" type="password" placeholder="Password" required>
+            <img id="hidepwd" onclick="togglePasswordIcon()" src="../assets/img/lock.png" alt="Lock-Icon">
+            <img id="showpwd" onclick="togglePasswordIcon()" src="../assets/img/visibility_off.png" alt="Eyes-Icon" class="dnone">
+          </div>
+          
+        </div>
+        <div id="error_message" class="position-absolute"></div>
+        
+
+        <div class="checkbox-ctn">
+          <input type="checkbox" id="login_checkbox">
+          <label for="login_checkbox">Remember me</label>
+        </div>
+        <div class="login-guest-ctn">
+          <button onclick="checkUserPassword()" class="login-btn">Log in</button>
+          <button onclick="guestLogin()" class="guest-btn">Guest Log in</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="signup-ctn">
+      <p>Not a Join user?</p>
+      <a href="./signup.html"><button class="signup-btn">Sign up</button></a>
+    </div>
+
+    <div class="logout-popup" id="logout_popup">You have been successfully logged out!</div>
+
+    <div class="legal-ctn">
+      <a href="./policy.html" target="_blank">Privacy Policy</a>
+      <a href="./impressum.html" target="_blank">Legal Notice</a>
+    </div>
+    
+
+  </div>
+
+</body>
+</html>

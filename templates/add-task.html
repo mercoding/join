@@ -1,0 +1,77 @@
+<section id="add-task" class="add-task">
+    <div class="add-task-head">
+        <div class="add-task-headline">
+            <h1>Add Task</h1>
+        </div>
+    </div>
+    <div class="add-task-main">
+        <form id="task-form" class="task-form">
+            <!-- Linker und rechter Bereich mit senkrechter Linie -->
+            <div class="form-row">
+                <!-- Linke Seite (Titel und Zuweisen an) -->
+                <div class="left-side">
+                    <div>
+                        <!-- Titel -->
+                        <label class="task-label" for="title">Title</label>
+                        <input class="task-input" type="text" id="title" name="title" required>
+                    </div>
+                    <!-- Beschreibung -->
+                    <label class="task-label" for="description">Description</label>
+                    <textarea class="task-textarea" id="description" name="description" rows="4"
+                        placeholder="Enter a description" required></textarea>
+                    <div>
+                        <!-- Zuweisen an -->
+                        <label class="task-label" for="assigned-to">Assigned to</label>
+                        <select class="task-select" id="assigned-to" name="assigned_to" required>
+                            <option value="" disabled selected>Select contacts to assign</option>
+                            <option value="mitarbeiter1">Mitarbeiter 1</option>
+                            <option value="mitarbeiter2">Mitarbeiter 2</option>
+                            <option value="mitarbeiter3">Mitarbeiter 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Rechte Seite (Fälligkeitsdatum) mit vertikaler Trennung -->
+                <div class="right-side divider-vertical">
+                    <div>
+                        <!-- Fälligkeitsdatum -->
+                        <label class="task-label" for="due-date">Due date</label>
+                        <input class="task-input" type="date" id="due-date" name="due_date" required>
+                    </div>
+
+                    <!-- Priorität als Buttons -->
+                    <label>Priority</label>
+                    <div class="priority-buttons">
+                        <button class="task-button clickable" type="button" class="priority-button" id="urgent"
+                            data-priority="hoch" onclick="selectPriority(this)">Urgent</button>
+                        <button class="task-button clickable" type="button" class="priority-button active" id="medium"
+                            data-priority="mittel" onclick="selectPriority(this)">Medium</button>
+                        <button class="task-button clickable" type="button" class="priority-button" id="low"
+                            data-priority="niedrig" onclick="selectPriority(this)">Low</button>
+                    </div>
+
+                    <!-- Kategorie -->
+                    <label class="task-label" for="category">Category</label>
+                    <select class="task-select" id="category" name="category" required>
+                        <option value="" disabled selected>Select task category</option>
+                        <option value="entwicklung">Entwicklung</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="design">Design</option>
+                    </select>
+
+                    <!-- Subtasks -->
+                    <label class="task-label">Subtasks</label>
+                    <div id="subtasks-container">
+                        <div class="subtask-container">
+                            <input class="task-input" type="text" name="subtasks[]" placeholder="Add new subtask">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" onclick="addSubtask()">Weitere Unteraufgabe hinzufügen</button>
+
+            <!-- Absenden -->
+            <button type="submit">Aufgabe erstellen</button>
+        </form>
+    </div>
+</section>

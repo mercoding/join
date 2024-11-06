@@ -1,0 +1,116 @@
+[
+  {
+    "id": 0,
+    "Column": "To Do",
+    "Title": "Projektinitialisierung",
+    "Description": "Initialisierung des JavaScript-Projekts mit npm und Git-Repository.",
+    "Date": "2024-10-10",
+    "Priority": "Medium",
+    "Category": "Technical Task",
+    "Subtasks": [],
+    "Persons": ["clara.peters@web.de"]
+  },
+  {
+    "id": 1,
+    "Column": "In Progress",
+    "Title": "Erstellung der Grundstruktur",
+    "Description": "HTML, CSS und JavaScript-Dateien anlegen und grundlegende Struktur erstellen.",
+    "Date": "2024-10-11",
+    "Priority": "Urgent",
+    "Category": "Technical Task",
+    "Subtasks": [
+                  {"Description": "HTML Dateien angelegt", "Done": true }, 
+                  {"Description": "CSS Dateien angelegt", "Done": false },
+                  {"Description": "Javascript Dateien angelegt", "Done": false }
+                ],
+    "Persons": ["max.schneider@gmx.de"]
+  },
+  {
+    "id": 2,
+    "Column": "To Do",
+    "Title": "API-Integration",
+    "Description": "Eine externe API in das Projekt integrieren, um Daten abzurufen.",
+    "Date": "2024-10-13",
+    "Priority": "Urgent",
+    "Category": "Technical Task",
+    "Subtasks": [],
+    "Persons": ["max.schneider@gmx.de", "mia.koch@gmx.de"]
+  },
+  {
+    "id": 3,
+    "Column": "Await Feedback",
+    "Title": "Datenbankanbindung",
+    "Description": "Verbindung zur Datenbank herstellen und CRUD-Operationen implementieren.",
+    "Date": "2024-10-15",
+    "Priority": "Medium",
+    "Category": "Technical Task",
+    "Subtasks": [],
+    "Persons": ["nico.frank@yahoo.com", "andre@gmbh.de", "mia.koch@gmx.de"]
+  },
+  {
+    "id": 4,
+    "Column": "In Progress",
+    "Title": "UI-Design verbessern",
+    "Description": "Das User Interface für bessere Usability und ansprechendes Design optimieren.",
+    "Date": "2024-10-17",
+    "Priority": "Low",
+    "Category": "User Story",
+    "Subtasks": [],
+    "Persons": ["andre@gmbh.de", "mia.koch@gmx.de"]
+  },
+  {
+    "id": 5,
+    "Column": "To Do",
+    "Title": "Unit Tests schreiben",
+    "Description": "Unit Tests für kritische Funktionen im JavaScript-Code erstellen.",
+    "Date": "2024-10-19",
+    "Priority": "Medium",
+    "Category": "User Story",
+    "Subtasks": [],
+    "Persons": ["hannah.zimmer@web.de", "nico.frank@yahoo.com", "mia.koch@gmx.de"]
+  },
+  {
+    "id": 6,
+    "Column": "Await Feedback",
+    "Title": "Bugfixing",
+    "Description": "Bekannte Fehler im Projekt beheben, die durch Testing aufgedeckt wurden.",
+    "Date": "2024-10-21",
+    "Priority": "Urgent",
+    "Category": "User Story",
+    "Subtasks": [],
+    "Persons": ["anna.mueller@example.com"]
+  },
+  {
+    "id": 7,
+    "Column": "To Do",
+    "Title": "Dokumentation erstellen",
+    "Description": "Erstellung der technischen Dokumentation und Benutzeranleitung.",
+    "Date": "2024-10-23",
+    "Priority": "Low",
+    "Category": "User Story",
+    "Subtasks": [],
+    "Persons": ["jonas.wolf@yahoo.com", "hannah.zimmer@web.de"]
+  },
+  {
+    "id": 8,
+    "Column": "In Progress",
+    "Title": "Code Review",
+    "Description": "Durchführen eines Code Reviews zur Verbesserung der Codequalität.",
+    "Date": "2024-10-25",
+    "Priority": "Medium",
+    "Category": "User Story",
+    "Subtasks": [],
+    "Persons": ["lukas.fischer@outlook.com", "max.schneider@gmx.de"]
+  },
+  {
+    "id": 9,
+    "Column": "Done",
+    "Title": "Projektabschluss",
+    "Description": "Projektabnahme und Übergabe an den Kunden.",
+    "Date": "2024-10-30",
+    "Priority": "Urgent",
+    "Category": "User Story",
+    "Subtasks": [],
+    "Persons": ["lukas.fischer@outlook.com", "anna.mueller@example.com"]
+  }
+]

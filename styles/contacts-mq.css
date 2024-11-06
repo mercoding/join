@@ -1,0 +1,194 @@
+@media only screen and (max-width: 1200px) {
+    main {
+      position: relative;
+      max-height: 100%;
+      overflow: hidden !important;
+    }
+  
+    .content {
+      max-height: 100%;
+      overflow-x: hidden;
+    }
+  
+    .contacts-container {
+      max-height: 100%;
+      position: static;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .contacts {
+      padding-top: 24px;
+      max-width: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      max-height: 100%;
+    }
+  
+    .add-contact-container {
+      bottom: 40px;
+      right: 40px;
+      background-color: transparent;
+      height: auto;
+      width: auto;
+    }
+  
+    .single-contact-btn {
+      gap: 15px;
+    }
+  
+    .letter,
+    .single-contact-btn {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .add-contact-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 40px;
+    }
+  
+    .add-contact-btn span:first-child {
+      display: none;
+    }
+  
+    /* ----------Contact-Info Container----------- */
+  
+    .contact-info-container {
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+      padding: 40px 45px;
+    }
+  
+    .contact-title {
+      flex-direction: column;
+      align-items: start !important;
+      gap: 16px;
+    }
+  
+    .contact-name-large {
+      font-size: 36px;
+    }
+  
+     .circle-info{
+      min-width: 80px;
+      height: 80px;
+      font-size: 24px;
+    } 
+  
+    .single-contact-large{
+      gap:20px;
+    }
+  
+    .vertical-line {
+      width: 59px;
+      height: 4px;
+      background-color: #29abe2;
+    }
+  
+    .back-arrow {
+      display: block !important;
+      right: 40px;
+      top: 40px;
+    }
+  
+    .icon-container {
+      flex-direction: column;
+      gap: 0;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 20px;
+      border-bottom-right-radius: 0;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 2000;
+      box-shadow: 0px 4px 4px 0px #00000040;
+      transition: all 250ms ease-in-out;
+      -webkit-transition: all 250ms ease-in-out;
+      -moz-transition: all 250ms ease-in-out;
+    }
+  
+    .icon-container-closed {
+      transform: translateX(200px);
+    }
+  
+    .contact-icon-btn {
+      padding: 8px;
+    }
+  
+    #contact-dialog {
+      max-width: 450px;
+      max-height: 750px;
+      height: 100%;
+    }
+  
+    .dialog-content {
+      flex-direction: column;
+      background-color: #fff;
+      overflow: auto;
+    }
+  
+    .dialog-title {
+      padding: 66px 24px;
+    }
+  
+    form {
+      max-width: 422px;
+      width: 100%;
+      gap:24px;
+    }
+
+    label {
+        padding: 10px 20px;
+    }
+  
+    .form-container {
+      width: 100%;
+      flex-direction: column;
+      background-color: transparent;
+      padding: 0 24px 66px 24px;
+      margin-top: -60px;
+      gap:24px;
+    }
+  
+    .join-logo {
+      display: none;
+    }
+  
+    .btn-container {
+      justify-content: center;
+    }
+  
+    .close-btn {
+      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%)
+        contrast(100%);
+      top: 24px;
+      right: 24px;
+    }
+  
+    .close-btn:hover {
+      background-color: transparent;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .contacts {
+      padding: 24px 0 0 0;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact-info-container {
+      padding: 40px 16px;
+    }
+    .back-arrow {
+      right: 14px;
+  }
+    .add-contact-container{
+      right: 14px;
+    }
+  }

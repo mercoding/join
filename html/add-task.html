@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+  <script src="../scripts/assets.js" defer></script>
+  <link rel="stylesheet" href="../styles/addTask.css">
+  <script src="../script.js" defer></script>
+  <script type="module" src="../scripts/module.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/assets.css" />
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+  <title>Join</title>
+</head>
+
+<body onload="loadAddTask()">
+  <header>
+    <div class="header-wrapper">
+      <div class="title">Kanban Project Management Tool</div>
+      <img src="../assets/icons/logo-dark.svg" alt="join-logo" class="main-logo-header d_none">
+      <div class="header-right">
+        <button class="help" onclick="openHelp()">
+          <img src="../assets/img/help.png" alt="help-icon">
+        </button>
+        <div class="user-profil">
+          <div class="dropdown-menu">
+            <button id="userlogo" class="profil-img" style="color: blue;">
+            </button>
+            <div class="dropdown d_none" id="dropdown-menu">
+              <button class="dropdown-btn" onclick="openImprint()"><span>Legal Notice</span></button>
+              <button class="dropdown-btn" onclick="openPolicy()"><span>Privacy Policy</span></button>
+              <button class="dropdown-btn" onclick="openLogin()"><span>Log out</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <img src="../assets/img/logo-weiss.png" alt="join-logo" class="main-logo">
+    <div class="menu-bar">
+      <button class="nav-btn" onclick="openSummary()">
+        <span class="nav-icon"><img src="../assets/icons/summary.png" alt=""></span>
+        <span class="nav-text clickable">Summary</span>
+      </button>
+      <button class="nav-btn active" onclick="openAddTask()">
+        <span class="nav-icon"><img src="../assets/icons/add-task.png" alt=""></span>
+        <span class="nav-text clickable">Add Task</span>
+      </button>
+      <button class="nav-btn" onclick="openBoards()">
+        <span class="nav-icon"><img src="../assets/icons/board.png" alt=""></span>
+        <span class="nav-text clickable">Board</span>
+      </button>
+      <button class="nav-btn" onclick="openContacts()">
+        <span class="nav-icon"><img src="../assets/icons/contact.png" alt=""></span>
+        <span class="nav-text clickable">Contacts</span>
+      </button>
+    </div>
+    <div class="data-protection">
+      <button class="data-policy clickable" onclick="openPolicy()"><span>Privacy Policy</span></button>
+      <button class="data-policy clickable" onclick="openImprint()"><span>Legal notice</span></button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="add-task" class="add-task">
+    </section>
+  </main>
+
+  <div class="lock-landscape">
+    <h1>Please Rotate Your Device!</h1>
+    <h1>Landscape Mode is not supported yet!</h1>
+  </div>
+  
+</body>
+
+</html>
